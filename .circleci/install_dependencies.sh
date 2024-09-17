@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # This script installs the dependencies to download and validate all studies
 
+# Upgrade pip
+echo "Upgrading pip..."
+python -m pip install --upgrade pip
+
 # Install python dependencies
 cd ~/repo/.circleci
 sudo pip install -r requirements.txt
